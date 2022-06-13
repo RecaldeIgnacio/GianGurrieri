@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #2c344c;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='34' viewBox='0 0 24 24'%3E%3Cg fill='%23655c75' fill-opacity='0.4'%3E%3Cpolygon fill-rule='evenodd' points='8 4 12 6 8 8 6 12 4 8 0 6 4 4 6 0 8 4'/%3E%3C/g%3E%3C/svg%3E");   
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}  
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-menu {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-size: 17px;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60px;
+    padding: 20px 0;
+    opacity: .8;
+    background-color: black;
+}
+
+
+.fa-brands {
+    position: left;
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+
+.instagram {
+    display: flex;
+    text-align: center;
+    font-size: 35px;
+}
+
+.section {
+    padding: 4rem 0rem !important;
+}
+
+.nav-ul {
+    list-style: none;
+}
+
+.nav-li {
+    display: flex;
+    display: inline-block;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 35px;
+}
+
+a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin: 30px;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    border-bottom: 2px solid #ffffff;
+    transform-origin: bottom;
+    transition: 210ms; 
+}
+
+
+.container {
+    margin: auto;
+    width: 100%;
+    padding-top: 0.5px;
+}
+
+.slider {
+    width: 100%;
+    height: 60vh;
+    background-image: url(/images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    animation: slide 20s infinite;
+}
+
+@keyframes slide {
+    25% {
+        background-image: url(/images/banner2.jpg);
+    }
+    50% {
+        background-image: url(/images/banner3.jpg);
+    }
+    100% {
+        background-image: url(/images/banner4.jpg);
+    }
+}
+
+
+
+.section {
+    padding: 20px;
+    width: 100%;
+}
+
+.section-h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.description-p {
+    display: flex;
+    text-align: center;
+    font-size: 22px;
+}
+
+.container-contact {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    background: rgb(214, 213, 213);
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 2vw;
+    width: 90%;
+    max-width: 500px;
+    border-radius: 8px;
+}
+
+form h3 {
+    color: #555;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form input,
+form textarea {
+    border: 0;
+    margin: 2px 0;
+    padding: 3px;
+    outline: .5px solid;
+    background-color: #f5f5f5;
+    font-size: 16px;
+}
+
+form button {
+    padding: 15px;
+    margin-top: 10px;
+    width: 100%;
+    align-self: center;
+    background-color: #cc2c3a;
+    color: white;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    border-radius: 35px;
+}
